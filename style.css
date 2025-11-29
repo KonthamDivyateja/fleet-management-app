@@ -1,0 +1,85 @@
+body{
+    font-family: Arial,sans-serif;
+    margin:0;
+    padding:0;
+    background-color: #f4f4f4;
+}
+#login-container{
+    max-width: 300px;
+    margin:100%;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#login-form input,#login-form button{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+#navbar{
+    background: #333;
+    color:white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#filters label,#filters select,#filters button{
+    margin-left: 10px;
+}
+#main-layout{
+    display: flex;
+    padding: 20px;
+}
+#sidebar{
+    width: 300px;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+}
+#fleet-form label,#fleet-form input,#fleet-form select,#fleet-form button{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    box-sizing: border-box;
+}
+#main-content-area{
+    flex-grow: 1;
+}
+#fleet-cards-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    padding-top: 10px;
+}
+.vehicle-card{
+    background: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.vehicle-card img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+
+}
+.vehicle-card p{
+    margin: 5px 0;
+    font-size: 0.9cm;
+}
+.vehicle-card button{
+    width:100%;
+    padding: 8px;
+    margin-top: 5px;
+    background-color: #5cb85c;
+    color: white;
+    border:none;
+    cursor: pointer;
+}
+.vehicle-card button:hover{
+    opacity: 0.9;
+}
